@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/cart_quantity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cart_quantity"
+        android:text="X"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/x"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="270dp"
+        android:layout_toRightOf="@id/x"
+        android:text="Zinger Burger"
+        android:textSize="15dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/cart_item_name"/>
+
+    <TextView
+        android:text="Rs. "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_RS"
+        android:layout_toStartOf="@+id/cart_price_value" />
+
+    <TextView
+        android:text="300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_price_value"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.foodpalm.foodpalm.Activities.LoginRegisterActivity"
+    tools:showIn="@layout/activity_login_register"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTER &amp; SIGN IN"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:id="@+id/headingText" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:ems="10"
+        android:layout_below="@+id/headingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/u_email"
+        android:textAlignment="center"
+        android:background="@drawable/fields"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/grey"
+        android:fontFamily="casual"
+        android:drawableLeft="@mipmap/user_icon"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_below="@+id/u_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/psw"
+        android:background="@drawable/fields"
+        android:hint="password"
+        android:textAlignment="center"
+        android:textColorHint="@color/grey"
+        android:fontFamily="casual"
+        android:textColor="@color/grey"
+        android:drawableLeft="@mipmap/pw_icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/psw"
+        android:id="@+id/error_msg"
+        android:layout_marginTop="5dp"
+        android:textSize="15dp"
+        android:textColor="#fc6666"
+        android:fontFamily="casual"
+        android:visibility="gone"
+        android:text="Incorrect Credentials"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/psw"
+        android:layout_marginTop="50dp"
+        android:id="@+id/loginbtn"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/buttonstyle"
+        android:onClick="openHome"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- OR -"
+        android:id="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginbtn"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/text2"
+        android:id="@+id/signupbtn"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="@drawable/signup_btn"
+        android:onClick="openSignUpActivity"
+        />
+
+</RelativeLayout>

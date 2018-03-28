@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.foodpalm.foodpalm.Activities.CategoryActivity"
+    tools:showIn="@layout/app_bar_category">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_heading"
+        android:text="McDonald's"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="2pt"
+        android:layout_marginLeft="3pt"
+        android:fontFamily="sans-serif-condensed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cat_heading"
+        android:layout_marginTop="2pt"
+        android:text=" deals in "
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkgrey"
+        />
+    <ListView
+        android:layout_below="@id/cat_heading"
+        android:layout_marginLeft="1.5pt"
+        android:layout_marginRight="1.5pt"
+        android:layout_marginTop="10dp"
+        android:id="@+id/category_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="5dp"/>
+
+</RelativeLayout>

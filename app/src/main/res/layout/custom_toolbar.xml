@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/c_toolbar"
+    android:background="@color/toolbar_color"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="12dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_alignParentTop="true"
+            android:id="@+id/toolbar_heading"
+            android:layout_weight="0.90" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shopping_cart"
+            android:background="#00ffffff"
+            android:id="@+id/cart_btn"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.10"
+            android:layout_marginLeft="0.2in"/>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.Toolbar>

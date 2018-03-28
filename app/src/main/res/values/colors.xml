@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8e31</color>
+    <color name="colorPrimaryDark">#993a27</color>
+    <color name="p_colorPrimaryDark">#b1993a27</color>
+    <color name="colorAccent">#ffbba6</color>
+    <color name="button_color">#FD4C29</color>
+    <color name="p_button_color">#b1fd4c29</color>
+    <color name="toolbar_color">#E54A19</color>
+    <color name="black">#000000</color>
+    <color name="grey">#ca4e4e4e</color>
+    <color name="fields">#d0e6e6e6</color>
+    <color name="false_fields">#41ff0000</color>
+    <color name="darkgrey">#4e4e4e</color>
+    <color name="transparent">#00000000</color>
+    <color name="catlist_bg">#9fe54a19</color>
+    <color name="highlight_color">#55e54a19</color>
+    <color name="menu_name_color">#565f63</color>
+    <color name="menu_det_color">#c8d0d5</color>
+    <color name="menu_list_color">#fafafa</color>
+</resources>

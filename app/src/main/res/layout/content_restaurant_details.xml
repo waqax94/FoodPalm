@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_restaurant_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.foodpalm.foodpalm.Activities.RestaurantDetails"
+    tools:showIn="@layout/activity_restaurant_details">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/ratingCard">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textColor="@color/toolbar_color"
+            android:textSize="70dp"
+            android:id="@+id/res_rating"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_star_black_24dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/ 0"
+            android:textColor="@color/grey"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/rated"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/d_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingCard"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textSize="30dp"
+            android:textColor="@color/darkgrey"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:text="-- No Description --"
+            android:id="@+id/res_description"
+            android:textColor="@color/grey"
+            />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/reserve_table_btn"
+        android:layout_below="@id/d_card"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Reserve Table"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:background="@drawable/buttonstyle"/>
+
+</RelativeLayout>

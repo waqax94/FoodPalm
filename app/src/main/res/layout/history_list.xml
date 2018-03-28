@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Home Delivery"
+        android:textStyle="bold"
+        android:layout_margin="2dp"
+        android:id="@+id/order_type_h"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_type_h"
+        android:layout_margin="2dp"
+        android:id="@+id/res_name_h"
+        android:text="Pizza Hut"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/res_name_h"
+        android:layout_below="@id/order_type_h"
+        android:id="@+id/comma_h"
+        android:layout_margin="2dp"
+        android:text=","/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comma_h"
+        android:layout_below="@id/order_type_h"
+        android:text="Jail Road"
+        android:layout_margin="2dp"
+        android:id="@+id/br_name_h" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_name_h"
+        android:text="Ammount Rs."
+        android:layout_margin="2dp"
+        android:id="@+id/amount_tag_h"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/res_name_h"
+        android:layout_toRightOf="@id/amount_tag_h"
+        android:layout_margin="2dp"
+        android:text="1000"
+        android:id="@+id/amount_h"/>
+
+    <TextView
+        android:text="10:53:45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/o_time_h"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:text="12-10-2017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/o_time_h"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/o_date_h"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:text="Placed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/o_date_h"
+        android:layout_alignParentEnd="true"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/o_status_h"
+        android:layout_margin="5dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:text="Pizza Hut"
+        android:textStyle="bold"
+        android:layout_margin="2dp"
+        android:id="@+id/r_res_name"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=","
+        android:layout_toRightOf="@id/r_res_name"
+        android:layout_margin="2dp"
+        android:id="@+id/r_comma"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pizza Hut"
+        android:id="@+id/r_brancharea"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/r_comma"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_res_name"
+        android:layout_margin="2dp"
+        android:id="@+id/r_table_id_tag"
+        android:text="Table Id: "/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/r_table_id_tag"
+        android:layout_below="@id/r_res_name"
+        android:text="2"
+        android:layout_margin="2dp"
+        android:id="@+id/r_table_id" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_table_id_tag"
+        android:text="Num of Persons: "
+        android:layout_margin="2dp"
+        android:id="@+id/r_numofperson_tag"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_table_id_tag"
+        android:layout_toRightOf="@id/r_numofperson_tag"
+        android:layout_margin="2dp"
+        android:text="200"
+        android:id="@+id/r_numofperson"/>
+
+    <TextView
+        android:text="10:53:45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/r_time"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:text="12-10-2017"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_time"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/r_date"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:text="Requested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r_date"
+        android:layout_alignParentEnd="true"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/r_status"
+        android:layout_margin="5dp"/>
+
+</RelativeLayout>

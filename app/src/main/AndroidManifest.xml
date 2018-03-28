@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.foodpalm.foodpalm">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/food_palm"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoginRegisterActivity"
+            android:label="@string/title_activity_login_register"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.RestuarantActivity"
+            android:label="@string/title_activity_restuarant"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activities.RestaurantDetails"
+            android:label="@string/title_activity_restaurant_details"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.TestActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.CategoryActivity"
+            android:label="@string/title_activity_category"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.SubCategoryActivity"
+            android:label="@string/title_activity_sub_category"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.ItemDetailsActivity"
+            android:label="@string/title_activity_item_details"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.CartActitvity"
+            android:label="@string/title_activity_cart_actitvity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.OrderActivity"
+            android:label="@string/title_activity_order"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.HistoryActivity"
+            android:label="@string/title_activity_history"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.TableRequestActivity"
+            android:label="@string/title_activity_table_request"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.TableReservationsActivity"
+            android:label="@string/title_activity_table_reservations"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Activities.UserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.LocationGetter"></activity>
+    </application>
+
+</manifest>

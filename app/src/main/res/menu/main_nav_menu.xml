@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/view_profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="View Profile"/>
+
+    <item android:id="@+id/change_password"
+        android:icon="@drawable/ic_lock_black_24dp"
+        android:title="Change Password"/>
+
+    <item android:id="@+id/history"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="View History"/>
+
+    <item android:id="@+id/order"
+        android:icon="@drawable/ic_assignment_black_24dp"
+        android:title="View Orders"/>
+
+    <item android:id="@+id/table_reserve"
+        android:icon="@drawable/ic_store_black_24dp"
+        android:title="Table Reservations"/>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_input_black_24dp"
+        android:title="Log Out"/>
+
+</menu>

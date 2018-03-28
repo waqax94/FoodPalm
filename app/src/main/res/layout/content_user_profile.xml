@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_user_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.foodpalm.foodpalm.Activities.UserProfileActivity"
+    tools:showIn="@layout/activity_user_profile"
+    android:background="@color/fields">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/userdp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/profile_img"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_img"
+        android:layout_marginTop="10dp"
+        android:text="Waqas Waheed"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_name"
+        android:layout_marginTop="10dp"
+        android:text="waqax94@gmail.com"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+    <TextView
+        android:id="@+id/profile_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_email"
+        android:layout_marginTop="10dp"
+        android:text="Lahore"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-condensed"/>
+
+
+</RelativeLayout>

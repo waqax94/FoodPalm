@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dine_in_take_away"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.foodpalm.foodpalm.Fragments.DineInTakeAwayFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_restaurant_dt"
+        android:gravity="center"
+        android:text="No Restuarant to Show"
+        android:textColor="@color/p_button_color"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:visibility="gone"/>
+
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="1.5pt"
+        android:layout_marginRight="1.5pt"
+        android:id="@+id/restuarant_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/transparent"
+        android:dividerHeight="10dp"
+        android:visibility="gone"/>
+
+</FrameLayout>

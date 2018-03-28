@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_height="80dp"
+    android:background="@drawable/res_background">
+
+    <ImageView
+        android:id="@+id/res_icon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/loginreg"
+        android:scaleType="centerCrop"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="6dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/res_title"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/res_icon"
+        android:text="McDonald's"
+        android:textSize="20dp"
+        android:textColor="@color/toolbar_color"
+        android:layout_marginTop="5dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <TextView
+        android:id="@+id/res_branch_title"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/res_icon"
+        android:layout_below="@id/res_title"
+        android:text="Jail Road"
+        android:textSize="15dp"
+        android:textColor="@color/darkgrey"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <ImageView
+        android:id="@+id/ratingStar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/res_icon"
+        android:layout_below="@id/res_branch_title"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <ImageView
+        android:id="@+id/ratingStar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ratingStar1"
+        android:layout_below="@id/res_branch_title"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <ImageView
+        android:id="@+id/ratingStar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ratingStar2"
+        android:layout_below="@id/res_branch_title"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <ImageView
+        android:id="@+id/ratingStar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ratingStar3"
+        android:layout_below="@id/res_branch_title"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+    <ImageView
+        android:id="@+id/ratingStar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ratingStar4"
+        android:layout_below="@id/res_branch_title"
+        android:src="@drawable/ic_star_border_black_24dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <Button
+        android:padding="1dp"
+        android:layout_width="60dp"
+        android:text="Order Now"
+        android:textSize="11dp"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/colorAccent"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:textAllCaps="false"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/orderbtnstyle"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/order_now"/>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/toolbar_color"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+</RelativeLayout>

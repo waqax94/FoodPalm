@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_cart_actitvity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.foodpalm.foodpalm.Activities.CartActitvity"
+    tools:showIn="@layout/activity_cart_actitvity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_item_text"
+        android:gravity="center"
+        android:text="Cart is Empty"
+        android:textColor="@color/p_button_color"
+        android:fontFamily="@string/action_settings"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cart_data">
+
+        <ListView
+            android:layout_marginLeft="1.5pt"
+            android:layout_marginRight="1.5pt"
+            android:layout_marginTop="10dp"
+            android:id="@+id/cart_item_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/transparent"
+            android:dividerHeight="5dp"
+            android:background="#61808283"/>
+
+        <TextView
+            android:layout_below="@id/cart_item_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.5pt"
+            android:text="Restaurant :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/restaurant_tag"/>
+
+        <TextView
+            android:layout_below="@id/cart_item_list"
+            android:text="Timmy's"
+            android:layout_margin="1.5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restarant_name"
+            android:textSize="20dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_below="@id/restaurant_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.5pt"
+            android:text="Order Type :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/order_type_tag"/>
+
+        <TextView
+            android:layout_below="@id/restaurant_tag"
+            android:text="Home Delivery"
+            android:layout_margin="1.5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_type"
+            android:textSize="20dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_below="@id/order_type_tag"
+            android:layout_width="wrap_content"
+            android:layout_margin="1.5pt"
+            android:layout_height="wrap_content"
+            android:text="Sub Total :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/total_tag"/>
+
+        <TextView
+            android:layout_below="@id/order_type_tag"
+            android:text="Rs. "
+            android:textSize="20dp"
+            android:layout_marginTop="1.5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_RS"
+            android:layout_toStartOf="@+id/total" />
+
+        <TextView
+            android:layout_below="@id/order_type_tag"
+            android:text="2000"
+            android:textSize="20dp"
+            android:layout_margin="1.5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:text="Clear Cart"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:id="@+id/clear_cart_btn"
+            android:textColor="#fff"
+            android:background="@drawable/clearcart_bg"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_above="@id/clear_cart_btn"
+            android:textSize="18dp"
+            android:text="Proceed to checkout"
+            android:textAllCaps="false"
+            android:id="@+id/checkout_btn"
+            android:textColor="#fff"
+            android:background="@drawable/checkout_bg"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
